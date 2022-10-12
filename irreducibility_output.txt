@@ -432,20 +432,12 @@ All bad primes > 19 (part 1) are: { 467 }
 
 
 
-
-
-
-
-
-
-
-
-For d= 29 all bad primes > 19 (part 2) are: { 29 }
-For d= 34 all bad primes > 19 (part 2) are: { 59 }
-For d= 53 all bad primes > 19 (part 2) are: { 53 }
-For d= 61 all bad primes > 19 (part 2) are: { 61 }
-For d= 71 all bad primes > 19 (part 2) are: { 59 }
-For d= 74 all bad primes > 19 (part 2) are: { 43 }
-For d= 89 all bad primes > 19 (part 2) are: { 53 }
-For d= 91 all bad primes > 19 (part 2) are: { 67 }
-For d= 93 all bad primes > 19 (part 2) are: { 31 }
+For d = 29 all bad primes > 19 (part 2) are: { 29 }
+For d = 34 all bad primes > 19 (part 2) are: { 59 }
+For d = 53 all bad primes > 19 (part 2) are: { 53 }
+For d = 61 all bad primes > 19 (part 2) are: { 61 }
+For d = 71 all bad primes > 19 (part 2) are: { 59 }
+For d = 74 all bad primes > 19 (part 2) are: { 43 }
+For d = 89 all bad primes > 19 (part 2) are: { 53 }
+For d = 91 all bad primes > 19 (part 2) are: { 67 }
+For d = 93 all bad primes > 19 (part 2) are: { 31 }

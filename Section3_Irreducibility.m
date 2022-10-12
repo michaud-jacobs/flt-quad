@@ -242,6 +242,6 @@ end function;
 for d in [d : d in [2..100] | IsSquarefree(d)] do
     all_bad_2 := all_bad_primes_2(d);
     if all_bad_2 ne {} then
-        print "For d=",d,"all bad primes > 19 (part 2) are:", all_bad_2;
+        print "For d =",d,"all bad primes > 19 (part 2) are:", all_bad_2;
     end if;
 end for;
