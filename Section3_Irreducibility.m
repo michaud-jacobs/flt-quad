@@ -188,3 +188,60 @@ mult_primes_q := function(d,p,bd);
     qs:= [ n*p+1: n in [1..bd] | (IsPrime(n*p+1)) and (IsSplit(n*p+1,OK)) and  ( (Integers() ! (Resultant(x^n-1,(x+1)^n-1)) mod (n*p+1)) ne 0  ) ];
     return qs;
 end function;
+
+// We wish to verify that for each value of d and bad prime p
+// that we can find a pair of primes of multiplicative reduction
+
+for d in [d : d in [2..100] | IsSquarefree(d)] do
+    all_bad_p := all_bad_primes_1(d);
+    for p in all_bad_p do
+        mult := mult_primes_q(d,p,100);
+        if mult eq [] then
+            print "No prime found when d =",d, "and p=",p;
+        end if;
+    end for;
+end for;
+
+/* Output:
+
+No prime found when d = 69 and p= 23
+No prime found when d = 93 and p= 31
+
+*/
+
+// However, in these cases, we know that we obtain non-exceptional points anyway
+
+twist_check := function(d,p);
+    pass := 0;
+    K := QuadraticField(d);
+    OK := Integers(K);
+    M := QuadraticField(-p);
+    OM := Integers(M);
+    ls := [l : l in PrimeFactors(Discriminant(OK)) | IsZero(p mod l) eq false];
+    for l in ls do
+        ll := Factorisation(l*OM)[1][1];
+        if IsPrincipal(ll) eq false then
+            pass := 1;
+            break;
+        end if;
+    end for;
+    return pass;
+end function;
+
+all_bad_primes_2 := function(d);
+    all_bad_1 := all_bad_primes_1(d);
+    all_bad_2 := {};
+    for p in all_bad_1 do
+        if twist_check(d,p) eq 0 and p ne 37 then
+            all_bad_2 := all_bad_2 join {p};
+        end if;
+    end for;
+    return all_bad_2;
+end function;
+
+for d in [d : d in [2..100] | IsSquarefree(d)] do
+    all_bad_2 := all_bad_primes_2(d);
+    if all_bad_2 ne {} then
+        print "For d=",d,"all bad primes > 19 (part 2) are:", all_bad_2;
+    end if;
+end for;
