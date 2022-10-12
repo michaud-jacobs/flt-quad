@@ -1,0 +1,427 @@
+RCG exponents for d = 2 are { 1 }
+RCG exponents for d = 3 are { 2 }
+RCG exponents for d = 5 are { 2 }
+RCG exponents for d = 6 are { 4 }
+RCG exponents for d = 7 are { 2 }
+RCG exponents for d = 10 are { 4 }
+RCG exponents for d = 11 are { 2 }
+RCG exponents for d = 13 are { 2 }
+RCG exponents for d = 14 are { 4 }
+RCG exponents for d = 15 are { 2, 4 }
+RCG exponents for d = 17 are { 1 }
+RCG exponents for d = 19 are { 2 }
+RCG exponents for d = 21 are { 2 }
+RCG exponents for d = 22 are { 4 }
+RCG exponents for d = 23 are { 2 }
+RCG exponents for d = 26 are { 8 }
+RCG exponents for d = 29 are { 2 }
+RCG exponents for d = 30 are { 2, 4 }
+RCG exponents for d = 31 are { 2 }
+RCG exponents for d = 33 are { 2 }
+RCG exponents for d = 34 are { 4, 8 }
+RCG exponents for d = 35 are { 2, 8 }
+RCG exponents for d = 37 are { 6 }
+RCG exponents for d = 38 are { 4 }
+RCG exponents for d = 39 are { 2, 4, 8 }
+RCG exponents for d = 41 are { 1 }
+RCG exponents for d = 42 are { 4 }
+RCG exponents for d = 43 are { 2 }
+RCG exponents for d = 46 are { 4 }
+RCG exponents for d = 47 are { 2 }
+RCG exponents for d = 51 are { 2, 4 }
+RCG exponents for d = 53 are { 2 }
+RCG exponents for d = 55 are { 2, 4, 8 }
+RCG exponents for d = 57 are { 2 }
+RCG exponents for d = 58 are { 4 }
+RCG exponents for d = 59 are { 2 }
+RCG exponents for d = 61 are { 2 }
+RCG exponents for d = 62 are { 4 }
+RCG exponents for d = 65 are { 4 }
+RCG exponents for d = 66 are { 2, 4 }
+RCG exponents for d = 67 are { 2 }
+RCG exponents for d = 69 are { 2 }
+RCG exponents for d = 70 are { 2, 4 }
+RCG exponents for d = 71 are { 2 }
+RCG exponents for d = 73 are { 1 }
+RCG exponents for d = 74 are { 4 }
+RCG exponents for d = 77 are { 2 }
+RCG exponents for d = 78 are { 2, 4 }
+RCG exponents for d = 79 are { 6 }
+RCG exponents for d = 82 are { 8 }
+RCG exponents for d = 83 are { 2 }
+RCG exponents for d = 85 are { 2, 4 }
+RCG exponents for d = 86 are { 4 }
+RCG exponents for d = 87 are { 2, 4 }
+RCG exponents for d = 89 are { 1 }
+RCG exponents for d = 91 are { 2, 4, 8 }
+RCG exponents for d = 93 are { 2 }
+RCG exponents for d = 94 are { 4 }
+RCG exponents for d = 95 are { 2, 4, 8 }
+RCG exponents for d = 97 are { 1 }
+
+
+
+
+
+
+
+Considering d = 2
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 3
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 5
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 6
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 7
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 10
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 11
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 13
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 14
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 15
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 17
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 19
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 21
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 22
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 23
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 26
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: { 37, 101, 103 }
+All bad primes > 19 (part 1) are: { 37, 101, 103 }
+++++++++++++++++++++++++++++++
+Considering d = 29
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: { 29 }
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 29 }
+++++++++++++++++++++++++++++++
+Considering d = 30
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 31
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 33
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 34
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: { 23, 37, 59, 71, 83 }
+All bad primes > 19 (part 1) are: { 23, 37, 59, 71, 83 }
+++++++++++++++++++++++++++++++
+Considering d = 35
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: { 37, 47, 61, 97 }
+All bad primes > 19 (part 1) are: { 37, 47, 61, 97 }
+++++++++++++++++++++++++++++++
+Considering d = 37
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: { 37 }
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 37 }
+++++++++++++++++++++++++++++++
+Considering d = 38
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 39
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: { 37, 227 }
+All bad primes > 19 (part 1) are: { 37, 227 }
+++++++++++++++++++++++++++++++
+Considering d = 41
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 42
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 43
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 46
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 47
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 51
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 53
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: { 53 }
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 53 }
+++++++++++++++++++++++++++++++
+Considering d = 55
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: { 37, 59, 89, 179, 2437 }
+All bad primes > 19 (part 1) are: { 37, 59, 89, 179, 2437 }
+++++++++++++++++++++++++++++++
+Considering d = 57
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 58
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 59
+The bad split primes in not coprime case are: { 23 }
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 23 }
+++++++++++++++++++++++++++++++
+Considering d = 61
+The bad split primes in not coprime case are: { 127 }
+The bad ramified primes are: { 61 }
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 61, 127 }
+++++++++++++++++++++++++++++++
+Considering d = 62
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 65
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 66
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 67
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 69
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: { 23 }
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 23 }
+++++++++++++++++++++++++++++++
+Considering d = 70
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 71
+The bad split primes in not coprime case are: { 59 }
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 59 }
+++++++++++++++++++++++++++++++
+Considering d = 73
+The bad split primes in not coprime case are: { 89 }
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 89 }
+++++++++++++++++++++++++++++++
+Considering d = 74
+The bad split primes in not coprime case are: { 43 }
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 43 }
+++++++++++++++++++++++++++++++
+Considering d = 77
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 78
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 79
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 82
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: { 37, 41, 109 }
+All bad primes > 19 (part 1) are: { 37, 41, 109 }
+++++++++++++++++++++++++++++++
+Considering d = 83
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 85
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 86
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 87
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: {}
+++++++++++++++++++++++++++++++
+Considering d = 89
+The bad split primes in not coprime case are: { 53 }
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 53 }
+++++++++++++++++++++++++++++++
+Considering d = 91
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: { 37, 47, 67, 787, 1049 }
+All bad primes > 19 (part 1) are: { 37, 47, 67, 787, 1049 }
+++++++++++++++++++++++++++++++
+Considering d = 93
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: { 31 }
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 31 }
+++++++++++++++++++++++++++++++
+Considering d = 94
+The bad split primes in not coprime case are: { 151 }
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 151 }
+++++++++++++++++++++++++++++++
+Considering d = 95
+The bad split primes in not coprime case are: {}
+The bad ramified primes are: {}
+The big RCG bad primes are: { 31, 37, 61, 79, 97, 2027 }
+All bad primes > 19 (part 1) are: { 31, 37, 61, 79, 97, 2027 }
+++++++++++++++++++++++++++++++
+Considering d = 97
+The bad split primes in not coprime case are: { 467 }
+The bad ramified primes are: {}
+The big RCG bad primes are: {}
+All bad primes > 19 (part 1) are: { 467 }
+++++++++++++++++++++++++++++++
