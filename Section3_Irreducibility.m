@@ -245,3 +245,25 @@ for d in [d : d in [2..100] | IsSquarefree(d)] do
         print "For d =",d,"all bad primes > 19 (part 2) are:", all_bad_2;
     end if;
 end for;
+
+// We are left with the following pairs (d,p) to Considering
+
+// (d,p) = (29,29), (34,59), (53,53), (61,61), (71,59), (74,43), (89,53), (91,67), (93,31)
+
+// We consider (d,p) = (29,29), (34,59), (53,53), (89,53) in the modular_parametrisation file
+// We consider (d,p) = (61,61) and (74,43) in the sieve file
+
+// It remains to consider (d,p) = (71,59), (91,67), (93,31)
+
+// The classification of all quadratic points on X_0(67) rules out (d,p) = (91,67):
+// J. Box. Quadratic points on modular curves with infinite Mordell–Weil group. Mathematics of Computation, 90(327):321–343, 2020.
+
+// The classification of all quadratic points on X_0(62) rules out (d,p) = (93,31):
+// F. Najman and B. Vukorepa. Quadratic points on bielliptic modular curves. https://arxiv.org/abs/2112.03226
+
+// Finally, for (d,p) = (71,59), we prove that the hyperelliptic curve X_0(59) twisted by d = 71 has no rational points
+
+X := SimplifiedModel(SmallModularCurve(59));
+X71 := QuadraticTwist(X,71);
+s := TwoCoverDescent(X71); // Computes the fake 2-Selmer set, about 30 mins.
+assert s eq {}; // So no rational points
