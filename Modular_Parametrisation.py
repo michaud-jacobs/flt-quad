@@ -74,7 +74,7 @@ def fields(F, x_coord):
         return Fs, F2s
 
 # We use this method for the following pairs (d,p):
-# (29,29), (34,59), (53,53), (71,59), (89,53), (93,31)
+# (29,29), (34,59), (53,53), (89,53)
 
 ################################################
 
@@ -139,21 +139,3 @@ fields(Fs[0],'inf')
 #  S^4 * (64*S^6 + 736*S^5 + 192*S^4 + 600*S^3 - 48*S^2 + 46*S - 1)^2)
 
 # No quadratic points.
-
-################################################
-
-# (d,p) = (71,59)
-
-d = 71
-E = EllipticCurve('118d1')
-assert check_ell_curve(d,E) == True # This is quite slow with Sage, it is much faster to check the rank of the twist with Magma
-pts = [E(t) for t in E.torsion_subgroup()]
-# [(0 : 1 : 0)]
-Fs = F_polys(E, True)
-fields(Fs[0],'inf')
-
-# It suffices to check that the pair of quadratic points is not defined over Q(sqrt(d))
-M.<y> = NumberField(x^2-2*x+4)
-M.discriminant() # -3, so not Q(sqrt(d))
-
-################################################
