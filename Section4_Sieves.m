@@ -269,6 +269,9 @@ eqns:=Equations(Y);
 
 Mw:=Transpose((Matrix(w43)));
 Diag,T:=PrimaryRationalForm(Mw);   // T^{-1} is the matrix we use for our change of coordinates.
+// We choose the following T (PrimaryRationalForm can produce different diagonalising matrices on different calls)
+T := ChangeRing(Matrix([[0,0,1],[0,-1,0],[-2,-1,0]]),Rationals());
+
 assert T*Mw*(T^-1) eq Diag;
 
 Eqg := [&+[(T^-1)[i][j]*R.j : j in [1..dim]] : i in [1..dim]]; // change of coordinate map
