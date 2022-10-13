@@ -6,19 +6,10 @@
 // This code computes the full newform decomposition.
 // This should only be used if the maximum newform dimension is < 500 as otherwise it is unlikely to terminate.
 
-CfsFull:=[**];
-CfsRed:=[**];
-CPrimes:=[**];
-Decomps:=[**];
-Cuspdims:=[];
-Newdims:=[];
-for Np in N_ps do
+decomp_elim := function(Np,K);
     M := HilbertCuspForms(K, Np);
     NewM:=NewSubspace(M);
-    Cuspdims:=Cuspdims cat [Dimension(M)];
-    Newdims:= Newdims cat [Dimension(NewM)];
     decomp := NewformDecomposition(NewM);
-    Decomps:=Decomps cat [*decomp*];
     CNpfs:=[];
     CNpPrimes:=[];
     for i in [1..#decomp] do
@@ -49,11 +40,8 @@ for Np in N_ps do
     end for;
     CNpred:=SetToSequence(Set(CNpfs));
     CNpPrimes:=SetToSequence(Set(CNpPrimes));
-    CfsFull:=CfsFull cat [*CNpfs*];
-    CfsRed:=CfsRed cat [*CNpred*];
-    CPrimes:=CPrimes cat [*CNpPrimes*];
-end for;
-CPrimes;   // A list of primes dividing the C_f values. If 0 appears, this corresponds to a C_f value 0.
+    return CNpPrimes;
+end function;
 
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
@@ -197,11 +185,11 @@ eliminate_2 := function(Np,K);
         Cs:=[*Cs[i] : i in [1..#Cs] | (Cs[i] eq 0) or ((Cs[i] ne 1) and (Maximum(PrimeFactors(Cs[i])) gt pbd))*];
         if #Vs eq 0 then
             print "All spaces eliminated after step", i;
-            return Vs, Cs, Es;
+            return Vs, Cs, Es, T;
         end if;
     end for;
     print "Spaces remaining, unable to eliminate the following primes:", Cs;
-    return Vs, Cs, Es;
+    return Vs, Cs, Es, T;
 end function;
 
 too_big_d := [39, 70, 78, 95]; // Dimensions too large for computations
