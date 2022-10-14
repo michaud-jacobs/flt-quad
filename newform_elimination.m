@@ -29,7 +29,6 @@ hecke_elim := function(Np,K);
     Cs:=[*Cf(T[1],e[1]) : e in Chpoly1*];
     Newind:=[i : i in [1..#Cs] | (Cs[i] eq 0) or ((Cs[i] ne 1) and (Maximum(PrimeFactors(Cs[i])) gt pbd))];
     Cs:=[*Cs[i] : i in Newind*];
-    print "There are", #Newind, "spaces remaining";
     Es:=[* [Chpoly1[i][1]] : i in Newind*];
     Vs:=[* *];
     print "Computing first Hecke decomposition";
@@ -73,7 +72,7 @@ hecke_elim := function(Np,K);
         Es:=[*Es[i] : i in [1..#Es] | (Cs[i] eq 0) or ((Cs[i] ne 1) and (Maximum(PrimeFactors(Cs[i])) gt pbd))*];
         Cs:=[*Cs[i] : i in [1..#Cs] | (Cs[i] eq 0) or ((Cs[i] ne 1) and (Maximum(PrimeFactors(Cs[i])) gt pbd))*];
         if #Vs eq 0 then
-            print "All spaces eliminated after step", i;
+            print "All spaces eliminated";
             return Vs, Cs, Es, T;
         end if;
     end for;
@@ -139,3 +138,8 @@ for d in [d : d in [2..100] | IsSquarefree(d) and d notin (too_big_d cat big_d)]
     print "====================================================================";
     print "====================================================================";
 end for;
+
+
+
+///// ADD CHECKS USING DECOMP ELIM.
+// Note that both could be removed using Section 6 too.

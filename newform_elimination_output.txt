@@ -8,10 +8,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -26,10 +25,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -40,7 +38,6 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
 Spaces remaining, unable to eliminate the following primes: [* 0 *]
@@ -57,10 +54,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -70,7 +66,6 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 2 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
 Spaces remaining, unable to eliminate the following primes: [* 0, 0, 0 *]
@@ -88,10 +83,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -102,10 +96,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -120,10 +113,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -134,10 +126,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -152,10 +143,9 @@ Considering level Np with factorisation: [
 Using 16 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -170,10 +160,9 @@ Considering level Np with factorisation: [
 Using 16 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -188,10 +177,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -202,10 +190,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -219,10 +206,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -232,10 +218,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -250,10 +235,9 @@ Considering level Np with factorisation: [
 Using 15 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -264,10 +248,9 @@ Considering level Np with factorisation: [
 Using 15 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 6 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 4
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -282,10 +265,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -296,10 +278,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -314,10 +295,9 @@ Considering level Np with factorisation: [
 Using 16 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 2 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -332,10 +312,9 @@ Considering level Np with factorisation: [
 Using 16 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -354,7 +333,6 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
 Spaces remaining, unable to eliminate the following primes: [* 0 *]
@@ -372,10 +350,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -386,10 +363,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -403,10 +379,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -416,10 +391,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -434,10 +408,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -448,10 +421,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 10 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 6
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -466,10 +438,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -480,10 +451,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 4
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -498,10 +468,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -516,10 +485,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 12 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 5
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -533,10 +501,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -546,10 +513,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 3 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 3
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -564,10 +530,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -582,10 +547,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 2 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 4
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -596,10 +560,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 6 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 6
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -614,10 +577,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 31 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 8
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -632,10 +594,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -646,10 +607,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 4
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -668,10 +628,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -684,10 +643,72 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
 Spaces remaining, unable to eliminate the following primes: [* 0, 0 *]
++++++++++++++++++++++++++++++++++++++++++++++++++
+====================================================================
+====================================================================
+====================================================================
+Considering d =  34
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [0, 1], 1>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [0, 1], 8>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+Spaces remaining, unable to eliminate the following primes: [* 0, 0, 753664,
+753664 *]
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Principal Prime Ideal
+    Generator:
+        [-6, -1], 1>,
+    <Prime Ideal
+    Two element generators:
+        [3, 0]
+        [1, 1], 2>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Principal Prime Ideal
+    Generator:
+        [-6, -1], 8>,
+    <Prime Ideal
+    Two element generators:
+        [3, 0]
+        [1, 1], 2>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -702,10 +723,9 @@ Considering level Np with factorisation: [
 Using 21 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -716,10 +736,9 @@ Considering level Np with factorisation: [
 Using 21 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 3 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -734,10 +753,9 @@ Considering level Np with factorisation: [
 Using 20 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 8 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 3
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -752,10 +770,9 @@ Considering level Np with factorisation: [
 Using 20 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 19 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 11
+All spaces eliminated1
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -769,10 +786,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -782,10 +798,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 6 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 4
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -800,10 +815,9 @@ Considering level Np with factorisation: [
 Using 22 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -814,10 +828,9 @@ Considering level Np with factorisation: [
 Using 22 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 14 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 5
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -836,10 +849,73 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
 Spaces remaining, unable to eliminate the following primes: [* 0 *]
++++++++++++++++++++++++++++++++++++++++++++++++++
+====================================================================
+====================================================================
+====================================================================
+Considering d =  42
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [0, 1], 1>
+]
+Using 18 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [0, 1], 1>,
+    <Prime Ideal
+    Two element generators:
+        [3, 0]
+        [0, 1], 2>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [0, 1], 8>
+]
+Using 18 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [0, 1], 8>,
+    <Prime Ideal
+    Two element generators:
+        [3, 0]
+        [0, 1], 2>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated0
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -854,10 +930,9 @@ Considering level Np with factorisation: [
 Using 15 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -868,10 +943,9 @@ Considering level Np with factorisation: [
 Using 15 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 6 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 6
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -886,10 +960,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -900,10 +973,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 35 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 5
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -918,10 +990,9 @@ Considering level Np with factorisation: [
 Using 21 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -932,10 +1003,9 @@ Considering level Np with factorisation: [
 Using 21 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 4 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 5
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -950,10 +1020,9 @@ Considering level Np with factorisation: [
 Using 15 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -964,10 +1033,9 @@ Considering level Np with factorisation: [
 Using 15 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 4 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 5
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -982,10 +1050,9 @@ Considering level Np with factorisation: [
 Using 14 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 4 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -1000,10 +1067,9 @@ Considering level Np with factorisation: [
 Using 14 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 30 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 9
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1017,10 +1083,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 4
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -1030,10 +1095,103 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 12 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 4
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+====================================================================
+====================================================================
+====================================================================
+Considering d =  55
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [1, 1], 1>
+]
+Using 16 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [1, 1], 4>
+]
+Using 16 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [1, 1], 8>
+]
+Using 16 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+Spaces remaining, unable to eliminate the following primes: [* 0, 0, 184 *]
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [1, 1], 1>,
+    <Prime Ideal
+    Two element generators:
+        [3, 0]
+        [4, 1], 2>
+]
+Using 16 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+Spaces remaining, unable to eliminate the following primes: [* 17, 17 *]
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [1, 1], 4>,
+    <Prime Ideal
+    Two element generators:
+        [3, 0]
+        [4, 1], 2>
+]
+Using 16 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [1, 1], 8>,
+    <Prime Ideal
+    Two element generators:
+        [3, 0]
+        [4, 1], 2>
+]
+Using 16 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1052,10 +1210,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -1068,7 +1225,6 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
 Spaces remaining, unable to eliminate the following primes: [* 0, 0 *]
@@ -1086,10 +1242,9 @@ Considering level Np with factorisation: [
 Using 14 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 2 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 3
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1104,10 +1259,9 @@ Considering level Np with factorisation: [
 Using 14 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 11 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 3
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1122,10 +1276,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1136,10 +1289,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 5 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 5
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1153,10 +1305,9 @@ Considering level Np with factorisation: [
 Using 20 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -1166,10 +1317,9 @@ Considering level Np with factorisation: [
 Using 20 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 15 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 7
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1184,10 +1334,9 @@ Considering level Np with factorisation: [
 Using 21 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1198,10 +1347,9 @@ Considering level Np with factorisation: [
 Using 21 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 20 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 13
+All spaces eliminated3
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1220,10 +1368,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1242,10 +1389,73 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 14 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 7
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+====================================================================
+====================================================================
+====================================================================
+Considering d =  66
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [0, 1], 1>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [0, 1], 1>,
+    <Prime Ideal
+    Two element generators:
+        [3, 0]
+        [0, 1], 2>
+]
+Using 16 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Principal Prime Ideal
+    Two element generators:
+        [2, 0]
+        [0, 1], 8>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Principal Prime Ideal
+    Two element generators:
+        [2, 0]
+        [0, 1], 8>,
+    <Prime Ideal
+    Two element generators:
+        [3, 0]
+        [0, 1], 2>
+]
+Using 16 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1260,10 +1470,9 @@ Considering level Np with factorisation: [
 Using 15 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1274,7 +1483,6 @@ Considering level Np with factorisation: [
 Using 15 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 12 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
 Spaces remaining, unable to eliminate the following primes: [* 19 *]
@@ -1291,10 +1499,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -1304,10 +1511,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 4 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 4
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1322,10 +1528,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1336,10 +1541,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 4 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 9
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1358,10 +1562,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1376,10 +1579,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 3
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1394,10 +1596,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 14 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 11
+All spaces eliminated1
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1411,10 +1612,9 @@ Considering level Np with factorisation: [
 Using 21 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -1424,10 +1624,9 @@ Considering level Np with factorisation: [
 Using 21 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 10 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 6
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1442,10 +1641,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 5 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1456,10 +1654,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 15 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 7
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1474,10 +1671,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 2 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1492,10 +1688,9 @@ Considering level Np with factorisation: [
 Using 19 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 21 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 7
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1510,10 +1705,9 @@ Considering level Np with factorisation: [
 Using 21 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1524,10 +1718,9 @@ Considering level Np with factorisation: [
 Using 21 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 7 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 7
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1541,10 +1734,9 @@ Considering level Np with factorisation: [
 Using 16 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -1554,10 +1746,9 @@ Considering level Np with factorisation: [
 Using 16 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 16 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 4
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1571,10 +1762,9 @@ Considering level Np with factorisation: [
 Using 16 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 7 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1588,10 +1778,9 @@ Considering level Np with factorisation: [
 Using 16 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 64 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 3
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1606,7 +1795,6 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
 Spaces remaining, unable to eliminate the following primes: [* 31, 31 *]
@@ -1620,10 +1808,9 @@ Considering level Np with factorisation: [
 Using 18 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 26 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 7
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1638,10 +1825,9 @@ Considering level Np with factorisation: [
 Using 23 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 2 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 7
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1652,10 +1838,9 @@ Considering level Np with factorisation: [
 Using 23 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 9 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 5
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1670,10 +1855,9 @@ Considering level Np with factorisation: [
 Using 22 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 7 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 8
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1688,10 +1872,9 @@ Considering level Np with factorisation: [
 Using 22 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 33 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 9
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1710,10 +1893,73 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 2 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
 Spaces remaining, unable to eliminate the following primes: [* 0 *]
++++++++++++++++++++++++++++++++++++++++++++++++++
+====================================================================
+====================================================================
+====================================================================
+Considering d =  91
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [1, 1], 1>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [1, 1], 4>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [1, 1], 1>,
+    <Prime Ideal
+    Two element generators:
+        [5, 0]
+        [1, 1], 2>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
++++++++++++++++++++++++++++++++++++++++++++++++++
+Considering level Np with factorisation: [
+    <Prime Ideal
+    Two element generators:
+        [2, 0]
+        [1, 1], 4>,
+    <Prime Ideal
+    Two element generators:
+        [5, 0]
+        [1, 1], 2>
+]
+Using 17 primes
+Computing first Hecke operator
+Factorising its characteristic polynomial
+Computing first Hecke decomposition
+Computing further Hecke decompositions
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1727,10 +1973,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 0 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Principal Prime Ideal
@@ -1740,10 +1985,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 9 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 8
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1758,10 +2002,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 2 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 2
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 Considering level Np with factorisation: [
     <Prime Ideal
@@ -1772,10 +2015,9 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 45 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
-All spaces eliminated after step 7
+All spaces eliminated
 +++++++++++++++++++++++++++++++++++++++++++++++++
 ====================================================================
 ====================================================================
@@ -1794,7 +2036,6 @@ Considering level Np with factorisation: [
 Using 17 primes
 Computing first Hecke operator
 Factorising its characteristic polynomial
-There are 1 spaces remaining
 Computing first Hecke decomposition
 Computing further Hecke decompositions
 Spaces remaining, unable to eliminate the following primes: [* 459 *]
