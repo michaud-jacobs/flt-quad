@@ -88,6 +88,7 @@ decomp_elim := function(Np,K,normbd);
     decomp := NewformDecomposition(NewM);
     CNpfs:=[];
     CNpPrimes:=[];
+    bad_f := [* *];
     for i in [1..#decomp] do
         f:=Eigenform(decomp[i]);
         Q_f:=HeckeEigenvalueField(decomp[i]);
@@ -109,13 +110,14 @@ decomp_elim := function(Np,K,normbd);
            CNpfPrimes:=PrimeFactors(CNpf);
         else CNpf:=0;
              CNpfPrimes:=[0];
+             bad_f := bad_f cat [* f *];
         end if;
         CNpPrimes:=CNpPrimes cat CNpfPrimes;
         CNpfs:=CNpfs cat [CNpf];
     end for;
     CNpred:=SetToSequence(Set(CNpfs));
     CNpPrimes:=SetToSequence(Set(CNpPrimes));
-    return CNpPrimes;
+    return CNpPrimes, bad_f, T;
 end function;
 
 
