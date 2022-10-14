@@ -116,7 +116,7 @@ p1 := Factorisation(Np)[1][1];
 p2 := Factorisation(Np)[2][1];
 Valuation(Discriminant(E),p1)*Valuation(Discriminant(E),p2) eq 20;
 
-// We then consider when the quantity ()(-8+2pt1)*(-8+2pt2) / 20) mod p is a square (for p >5)
+// We then consider when the quantity ((-8+2pt1)*(-8+2pt2) / 20) mod p is a square (for p >5)
 // This is a square if and only if 5 is a square mod p
 // This occurs if and only if p = +1 or -1 mod p
 // So there are no solutions if p = +2 or -2 mod p
@@ -197,8 +197,3 @@ for d in [17,33,41,57,89] do
     end for;
     print "+++++++++++++++++++++++++++++++";
 end for;
-
-/* Output:
-
-
-*/
