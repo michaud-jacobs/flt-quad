@@ -7,7 +7,7 @@
 d := 34;
 N_ps,K := Np_possibilities(d);
 Np := N_ps[2]; // This is p^8, for p the prime above 2.
-Vs, Cs, Es, T := eliminate_2(Np,K); // (using norm bound of 150)
+Vs, Cs, Es, T := hecke_elim(Np,K); // (using norm bound of 150)
 assert Cs eq [* 0, 0, 753664, 753664 *];
 // We want to try and eliminate the first two newforms.
 // We can see the newform's eigenvalues with Es
@@ -59,7 +59,7 @@ assert Valuation(j2,pp) ge 0;
 d := 55;
 N_ps,K := Np_possibilities(d);
 Np := N_ps[3]; // This is p^8, for p the prime above 2.
-Vs, Cs, Es, T := eliminate_2(Np,K); // (using norm bound of 150)
+Vs, Cs, Es, T := hecke_elim(Np,K); // (using norm bound of 150)
 assert Cs eq [* 0, 0, 184 *];
 f1 := Es[1];
 e_vals_f1 := [-Evaluate(e,0) : e in f1];
@@ -91,8 +91,35 @@ assert Valuation(j1,pp) ge 0;
 assert Valuation(j2,pp) ge 0;
 
 
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 
 
+// We verify the mod 5 case when d = 89
+
+d := 89;
+N_ps, K := Np_possibilities(d);
+assert #N_ps eq 1;
+Np := N_ps[1];
+normbd := 100;
+_, bad_f, T := decomp_elim(Np,K,normbd);
+assert #bad_f eq 1;
+f := bad_f[1];
+traces_f := [HeckeEigenvalue(f,q) : q in T];
+// [ -2, -2, 6, 0, 0, 2, 2, 8, 8, -6, -6, -6, 8, 8, -8, -8, 14, 14, 16, 16, -6, -2, -2 ]
+Ell_curves := EllipticCurveSearch(Np,400: Primes := T, Traces := traces_f); // 30 seconds
+E := Ell_curves[1];
+// Elliptic Curve defined by y^2 + x*y = x^3 - x^2 + 1/2*(72875*sqrt_d - 687501)*x + 1/2*(-20764677*sqrt_d + 195893571) over K
+assert E eq MinimalModel(E);
+assert [TraceOfFrobenius(E,q) : q in T] eq traces_f;
+p1 := Factorisation(Np)[1][1];
+p2 := Factorisation(Np)[2][1];
+Valuation(Discriminant(E),p1)*Valuation(Discriminant(E),p2) eq 20;
+
+// We then consider when the quantity ()(-8+2pt1)*(-8+2pt2) / 20) mod p is a square (for p >5)
+// This is a square if and only if 5 is a square mod p
+// This occurs if and only if p = +1 or -1 mod p
+// So there are no solutions if p = +2 or -2 mod p
 
 
 
@@ -104,62 +131,74 @@ assert Valuation(j2,pp) ge 0;
 
 // This code carries out the computations of Lemma 5.5 in the paper.
 
-for d in [57,89] do
-U<x>:=PolynomialRing(Rationals());
-K<a>:=NumberField(x^2-d);
-OK:=Integers(K);
-
-PP:=PrimesInInterval(17,10^6);  // Primes to test
-ns:=[];    // For each prime we aim to find a value of n that works.
-time for p in PP do;
-    nsp:=[];
-    for n in [1..p-3] do
-        if  ((n mod 4) eq 2) and (IsPrime(n*p+1)) and  (IsSplit(n*p+1,OK)) then
-            q:=n*p+1;
-            S<z>:=PolynomialRing(GF(q));
-            if Resultant(z^n-1,   (z+1)^n-1) ne 0 then
-               nsp:= nsp cat [n];
-            break n;
+initial_bad_p := function(d);
+    U<x>:=PolynomialRing(Rationals());
+    K<a>:=NumberField(x^2-d);
+    OK:=Integers(K);
+    PP:=PrimesInInterval(17,10^4);  // Primes to test
+    ns:=[];    // For each prime we aim to find a value of n that works.
+    for p in PP do;
+        nsp:=[];
+        for n in [1..p-3] do
+            if  ((n mod 4) eq 2) and (IsPrime(n*p+1)) and  (IsSplit(n*p+1,OK)) then
+                q:=n*p+1;
+                S<z>:=PolynomialRing(GF(q));
+                if Resultant(z^n-1,   (z+1)^n-1) ne 0 then
+                    nsp:= nsp cat [n];
+                    break n;
+                end if;
             end if;
-        end if;
+        end for;
+        ns:=ns cat [nsp];
     end for;
-    ns:=ns cat [nsp];
-end for;
+    badp:=[PP[i] : i in [1..#ns] |#ns[i] eq 0];  // A list of primes for which we cannot obtain such an n.
+    return badp;
+end function;
 
-#[i : i in [1..#ns] |#ns[i] eq 0];
-badp:=[PP[i] : i in [1..#ns] |#ns[i] eq 0];  // A list of primes for which we cannot obtain such an n.
-badp;
-end for;
+
+
+
 
 
 // In these cases we work directly with the Hilbert newforms with c-values 0 and try and find a suitable n for each prime p.
 
-Gns:=[];  // ns that work for the bad primes.
-for p in badp do
-    p;
-    // We can alter the range of n here
+elim_p := function(p,f,K);
+    U<x>:=PolynomialRing(Rationals());
+    OK := Integers(K);
     qs:=[ n*p+1: n in [1..200] | (IsPrime(n*p+1)) and (IsSplit(n*p+1,OK)) and( (Integers()!(Resultant(x^n-1,(x+1)^n-1)) mod (n*p+1)) ne 0)];
-    q:=qs[1]; // a choice of prime q. Usually the first prime works.
-    n:=(q-1)/p;
-    Gns:=Gns cat [n];
-    qq:=Factorisation(q*OK)[1][1];
-    h1:=Integers() ! (HeckeEigenvalue(f1,qq)) mod p;
-    assert h1 ne 2;     // If this holds, then n works
+    for q in qs do
+        n:=(q-1)/p;
+        qq:=Factorisation(q*OK)[1][1];
+        h1:=Integers() ! (HeckeEigenvalue(f,qq)) mod p;
+        if h1 ne 2 then
+            print "Eliminated",p, "using n = ", n;
+            return n;
+        end if;
+    end for;
+    print "Unable to eliminate",p;
+    return 0;
+end function;
+
+for d in [17,33,41,57,89] do
+    print "Considering d = ",d;
+    init_bad_p := initial_bad_p(d);
+    "Initial bad primes are:", init_bad_p;
+    N_ps, K := Np_possibilities(d);
+    for Np in N_ps do
+        C_primes, bad_f := decomp_elim(Np,K,100);
+        i := 1;
+        for f in bad_f do
+            print "Considering newform", i;
+            i := i+1;
+            for p in init_bad_p do
+                n := elim_p(p,f,K);
+            end for;
+        end for;
+    end for;
+    print "+++++++++++++++++++++++++++++++";
 end for;
 
-// We list below the bad primes for each value d considered and values of n that work to eliminate them.
+/* Output:
 
-// d = 17:       31, 43, 53, 61, 67, 137, 157, 167
-// n:            46, 40, 74, 16, 70, 8,   76,  128
 
-// d = 33:       19, 23, 29, 31, 37, 67, 73, 139, 379
-// n:            40, 20, 8,  46, 4,  28, 4,  4,   52
-
-// d = 41:       17, 19, 23, 31, 37, 47, 59, 61, 83, 97, 137, 283, 523
-// n:            26, 22, 20, 46, 40, 20, 20, 76, 32, 4,  8,   40,  16
-
-// d = 57:       17, 19, 23, 31, 37, 41, 61, 67, 71, 101, 199, 257, 283
-// n:            98  NA, 26, 46, 40, 68, 16, 4,  8,  56,  4,   176, 172   (no value of n found for p = 19)
-
-// d = 89:       17, 19, 29, 37, 41,  127, 137, 139, 157, 163, 193, 227
-// n:            26, 40, 8,  40, 56*, 4,   20,  52,  28,  64,  52,  176
+*/

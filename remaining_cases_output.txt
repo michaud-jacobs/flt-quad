@@ -1,0 +1,102 @@
+Considering d =  17
+Initial bad primes are: [ 31, 43, 53, 61, 67, 137, 157, 167 ]
+Considering newform 1
+Eliminated 31 using n =  46
+Eliminated 43 using n =  40
+Eliminated 53 using n =  74
+Eliminated 61 using n =  16
+Eliminated 67 using n =  70
+Eliminated 137 using n =  8
+Eliminated 157 using n =  76
+Eliminated 167 using n =  128
++++++++++++++++++++++++++++++++
+Considering d =  33
+Initial bad primes are: [ 19, 23, 29, 31, 37, 67, 73, 139, 379 ]
+Considering newform 1
+Eliminated 19 using n =  40
+Eliminated 23 using n =  20
+Eliminated 29 using n =  8
+Eliminated 31 using n =  46
+Eliminated 37 using n =  4
+Eliminated 67 using n =  28
+Eliminated 73 using n =  4
+Eliminated 139 using n =  4
+Eliminated 379 using n =  52
+Considering newform 2
+Eliminated 19 using n =  40
+Eliminated 23 using n =  20
+Eliminated 29 using n =  8
+Eliminated 31 using n =  46
+Eliminated 37 using n =  4
+Eliminated 67 using n =  28
+Eliminated 73 using n =  4
+Eliminated 139 using n =  4
+Eliminated 379 using n =  52
++++++++++++++++++++++++++++++++
+Considering d =  41
+Initial bad primes are: [ 17, 19, 23, 31, 37, 47, 59, 61, 83, 97, 137, 283, 523
+]
+Considering newform 1
+Eliminated 17 using n =  26
+Eliminated 19 using n =  22
+Eliminated 23 using n =  20
+Eliminated 31 using n =  46
+Eliminated 37 using n =  40
+Eliminated 47 using n =  20
+Eliminated 59 using n =  20
+Eliminated 61 using n =  76
+Eliminated 83 using n =  32
+Eliminated 97 using n =  4
+Eliminated 137 using n =  8
+Eliminated 283 using n =  40
+Eliminated 523 using n =  16
++++++++++++++++++++++++++++++++
+Considering d =  57
+Initial bad primes are: [ 17, 19, 23, 31, 37, 41, 61, 67, 71, 101, 199, 257, 283
+]
+Considering newform 1
+Eliminated 17 using n =  98
+Unable to eliminate 19
+Eliminated 23 using n =  26
+Eliminated 31 using n =  46
+Eliminated 37 using n =  40
+Eliminated 41 using n =  68
+Eliminated 61 using n =  16
+Eliminated 67 using n =  4
+Eliminated 71 using n =  8
+Eliminated 101 using n =  56
+Eliminated 199 using n =  4
+Eliminated 257 using n =  176
+Eliminated 283 using n =  172
+Considering newform 2
+Eliminated 17 using n =  98
+Unable to eliminate 19
+Eliminated 23 using n =  26
+Eliminated 31 using n =  46
+Eliminated 37 using n =  40
+Eliminated 41 using n =  68
+Eliminated 61 using n =  16
+Eliminated 67 using n =  4
+Eliminated 71 using n =  8
+Eliminated 101 using n =  56
+Eliminated 199 using n =  4
+Eliminated 257 using n =  176
+Eliminated 283 using n =  172
++++++++++++++++++++++++++++++++
+Considering d =  89
+Initial bad primes are: [ 17, 19, 29, 37, 41, 127, 137, 139, 157, 163, 193, 227
+]
+Considering newform 1
+Eliminated 17 using n =  26
+Eliminated 19 using n =  40
+Eliminated 29 using n =  8
+Eliminated 37 using n =  40
+Eliminated 41 using n =  56
+Eliminated 127 using n =  4
+Eliminated 137 using n =  20
+Eliminated 139 using n =  52
+Eliminated 157 using n =  28
+Eliminated 163 using n =  64
+Eliminated 193 using n =  52
+Eliminated 227 using n =  176
++++++++++++++++++++++++++++++++
