@@ -1,13 +1,43 @@
-// This code follows the algorithm described in Section 5.2 of the paper.
-// If the dimension of the space of newforms is > 10000 then the code is unlikely to terminate.
+// Magma code to support the computations in the paper Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+// See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
 
-Cf:=function(q,e); // q a prime ideal, e a polynomial. Outputs corresponding c-value. See Remark 5.3 of the paper.
+// The code works on Magma V2.26-10
+// The output is in the newform_elimination_output.txt file
+
+// This code attemptes to eliminate all newforms at all possible levels
+// There are two functions for this, hecke_elim and decomp_elim
+
+// hecke_elim works directly with Hecke operators to compute partial newform fundamental
+// as the levels get larger (say > 200) it is much faster
+// as the levels get even larger (say >1000), it is the only option.
+
+// decomp_elim computes the full newform decompositions
+// it should only be used on spaces of smaller dimensions
+// it has a greater chance of eliminating primes than hecke_elim
+
+// the functions in this file rely on the Np_possibilities functions in the levels.m file
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+// auxiliary function to compute c-values
+// q a prime ideal, e a polynomial. Outputs corresponding c-value. See Remark 5.3 of the paper.
+
+Cf:=function(q,e);
     nq:=Norm(q);
     A:=[a : a in [Ceiling(-2*Sqrt(nq))..Floor(2*Sqrt(nq))] | IsZero((nq+1 - a) mod 4)];
     C1:=nq * Evaluate(e,nq+1) * Evaluate(e,-nq-1) * (&*[Evaluate(e,-a) : a in A]);
     C:= AbsoluteValue(Integers() ! C1 );
     return C;
 end function;
+
+// hecke_elim works directly with Hecke operators to try and eliminate newforms
+// Input: Level Np and quadratic field K
+// Output:
+// Vs: subspaces of the space of newforms that were not eliminated0
+// Cs: corresponding c-values of these subspaces
+// Es: corresponding characteristic polynomials of these subspaces
+// T: list of primes used
 
 hecke_elim := function(Np,K);
     M := HilbertCuspForms(K, Np);
@@ -80,6 +110,13 @@ hecke_elim := function(Np,K);
     return Vs, Cs, Es, T;
 end function;
 
+// decomp_elim computes the full newform decomposition to try and eliminate newforms
+// Input: Level Np, quadratic field K, normbd to control how many primes to use
+// Output:
+// CNpprimes: primes that were not eliminated,
+//            a zero means no primes were eliminated for the corresponding form
+// bad_f: a list of newforms with c_value = 0
+// T: list of primes used
 
 decomp_elim := function(Np,K,normbd);
     M := HilbertCuspForms(K, Np);
@@ -121,12 +158,18 @@ end function;
 
 
 too_big_d := [39, 70, 78, 95]; // Dimensions too large for computations (some dimension > 10000)
-big_d := [34, 42, 55, 66, 91];
 
 // Note that the computations for d = 34, 42, 55, 66, 91 require a lot of memory (some dimension > 3000)
 // Especially d = 55, 66 (some dimension > 7000)
 
-for d in [d : d in [2..100] | IsSquarefree(d) and d notin (too_big_d cat big_d)] do
+// We now eliminate newforms
+// We start by only using hecke_elim
+
+// We include data for 1 < d < 25 to compare with Freitas and Siksek's paper
+// The output is available in the newform_elimination_output.txt file
+
+
+for d in [d : d in [2..100] | IsSquarefree(d) and d notin (too_big_d)] do
     print "Considering d = ", d;
     N_ps, K := Np_possibilities(d);
     for Np in N_ps do
@@ -139,7 +182,17 @@ for d in [d : d in [2..100] | IsSquarefree(d) and d notin (too_big_d cat big_d)]
     print "====================================================================";
 end for;
 
+// We now use decomp_elim to eliminate the following triples (d,p,Np):
+// (d,p,Np) = (67,19,N_ps[2]) and (d,p) = (55,17,N_ps[4])
 
+d := 67;
+N_ps, K := Np_possibilities(d);
+Np := N_ps[2];
+bad_primes := decomp_elim(Np,K,100); // [ 2, 3, 5, 7, 11 ]
+assert 19 notin bad_primes;
 
-///// ADD CHECKS USING DECOMP ELIM.
-// Note that both could be removed using Section 6 too.
+d := 55;
+N_ps, K := Np_possibilities(d);
+Np := N_ps[4];
+bad_primes := decomp_elim(Np,K,100); // [ 2, 3 ]
+assert 17 notin bad_primes;
