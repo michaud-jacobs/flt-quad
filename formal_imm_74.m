@@ -1,16 +1,25 @@
-// Magma code to support the calculations in the paper Fermat's Last Theorem and Modular Curves over Real Quadratic Fields.
+// Magma code to support the computations in the paper
+// Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+// See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
 
-// This code carries out the computations for the proof of Lemma 4.9.
+// The code works on Magma V2.26-10
+// The output is included within the file
+
+// This code works with the modular curve X_0(74) to verify the formal immersion criterion
+// presented in the paper. See Lemma 4.9
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
 N:=74;
 S:=CuspForms(N);
 R<q>:=PowerSeriesRing(Integers());
 
 J:=JZero(N);
-dec:=Decomposition(J);
+dec:=Decomposition(J); // the decomposition of J_0(74)
 
-// This is the decomposition of J_0(74)
-/*
+/* Output:
+
 [
     Modular abelian variety 74A of dimension 2, level 2*37 and conductor
     2^2*37^2 over Q,
@@ -44,7 +53,9 @@ end for;
 
 ff:=Newform(dec[1]);  // These are Galois Conjugacy Class Representatives
 gg:=Newform(dec[2]);
-hh:=Newform(dec[5]);  // Note dec[5] and dec[6] are equal
+hh:=Newform(dec[5]);
+// Note dec[5] and dec[6] are the same:
+assert hh eq Newform(dec[6]);
 
 // We would like to have all the Galois conjugacy class representatives.
 
@@ -56,21 +67,11 @@ f5:=Newforms("37B")[1];
 
 Nfs:=[*f1,f2,f3,f4,f5*];
 
-ALs:=[ m : m in Divisors(N) | GCD(m,N div m) eq 1 and m gt 1];
+ALs:=[ m : m in Divisors(N) | GCD(m,N div m) eq 1 and m gt 1]; // Atkin--Lehner indices
 
-// We consider two methods:
-// one works with the above cuspforms
-// the other takes integral cuspforms
+// By applying the AL involutions we compute the expansions at other cusps for each newform
 
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-//////////////////// Method 1 ////////////////////////
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-
-// This works well in the case N=74 as the coefficients we want to consider are all integral anyway.
-
-CuspExps:=[Nfs];
+CuspExps:=[Nfs]; // Initial list
 
 for m in ALs do
     CE:=[* *];
@@ -79,123 +80,59 @@ for m in ALs do
         K:= CoefficientField(f);
         RK:= ChangeRing(R,K);
         SK:= BaseChange(S,K);
-        fK:= SK ! (RK ! f);    // May sometimes need to increase precision here to uniquely determine form
+        fK:= SK ! (RK ! f);
         fKm:=AtkinLehnerOperator(m,fK);
         CE:= CE cat [*fKm*];
      end for;
      CuspExps:=CuspExps cat [CE];
 end for;
 
-// Choose values between 1 and 4.
-// 1 = infinity
-// i = ALs[i](infinity) for i = 2,3,4.
+// We compute the 4 formal immersion matrices, F_inf, F_inf,2, F_inf,3, and F_inf,4
+// Output included after the loop
 
-Cusp1:=1;
-Cusp2:=3;
+Cusp1:=1; // 1 <--> infinity,
+for i in [1,2,3,4] do
+    Cusp2 := i; // i <--> ALs[i](infinity) for i = 2,3,4.
 
-Col1:=[*Coefficient(f,1) : f in CuspExps[Cusp1]*];
+    Col1:=[Integers() ! Coefficient(f,1) : f in CuspExps[Cusp1]]; // First column of matrix
 
-if Cusp1 eq Cusp2 then
-   Col2 := [*Coefficient(f,2) : f in CuspExps[Cusp1]*];
-else Col2 := [*Coefficient(f,1) : f in CuspExps[Cusp2]*];
-end if;
-
-// We can then check the rank of the matrix manually (coefficient fields don't match up).
-
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-//////////////////// Method 2 ////////////////////////
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-
-// We seek integral bases for the abelian varieties of dimension >1.
-// We search for a prime q such that the qth coefficients of the newforms of interest are all rational
-// Suffices to work with f1 and f3 here.
-// Need to make sure we have distinct eigenvalues at q and that corresponding Eigenspaces are 2-dimensional
-
-Tups:=[];
-for q in PrimesInInterval(2,1000) do
-    aqf1:=Coefficient(f1,q);
-    aqf3:=Coefficient(f3,q);
-    if Degree(MinimalPolynomial(aqf1)) eq 1 and  Degree(MinimalPolynomial(aqf3)) eq 1 then
-       Tq:=HeckeOperator(S,q);
-       if Dimension(Eigenspace(Tq,aqf1)) eq 2 and Dimension(Eigenspace(Tq,aqf3)) eq 2 then
-          Tups:=Tups cat [<q,aqf1,aqf3>];
-          break; // Can stop once one value works if we like
-       end if;
-    end if;
-end for;
-
-// The prime 2 works. The next prime that works is 1091; then 1373.
-
-i:=1; // Prime to use is Tups[i][1].
-q:=Tups[i][1];
-aqf1:=Tups[i][2];
-aqf3:=Tups[i][3];
-Tq:=HeckeOperator(S,q);
-E1:=Basis(Eigenspace(Tq,aqf1));
-E2:=Basis(Eigenspace(Tq,aqf3));
-
-B:=Basis(S);
-
-Nfs:=[&+[E1[1][i]*B[i] : i in [1..#B]],
-      &+[E1[2][i]*B[i] : i in [1..#B]],
-      &+[E2[1][i]*B[i] : i in [1..#B]],
-      &+[E2[2][i]*B[i] : i in [1..#B]],
-      S ! (R ! f5)];
-
-
-CuspExps:=[*Nfs*];
-
-for m in ALs do
-    CE:=[* *];
-    for f in Nfs do
-        fm:=AtkinLehnerOperator(m,f);
-        CE:= CE cat [*fm*];
-     end for;
-     CuspExps:=CuspExps cat [*CE*];
-end for;
-
-////////////////////////////////////////////////////////////////////////
-// For an individual formal immersion matrix:
-// Choose values between 1 and 4.
-// 1 = infinity
-// i = ALs[i](infinity) for i = 2,3,4.
-Cusp1:=1;
-Cusp2:=3;
-
-Col1:=[Coefficient(f,1) : f in CuspExps[Cusp1]];
-if Cusp1 eq Cusp2 then
-   Col2 := [Coefficient(f,2) : f in CuspExps[Cusp1]];
-else Col2 := [Coefficient(f,1) : f in CuspExps[Cusp2]];
-end if;
-
-FIM:=Transpose(Matrix([Col1,Col2]));
-FIM;
-Rank(FIM);  // Rank over rationals
-
-l:=7;
-Rank(RMatrixSpace(GF(l),5,2)!FIM); // Rank mod l
-
-////////////////////////////////////////////////////////////////////////
-// We can also obtain all the formal immersion matrices:
-
-CuspPairs:=[[i,j] : i in [1..4], j in [1..4] | i le j];
-Ranks:=[];
-FIMs:=[];
-for Cp in CuspPairs do
-    Cusp1:=Cp[1];
-    Cusp2:=Cp[2];
-    Col1:=[Coefficient(f,1) : f in CuspExps[Cusp1]];
     if Cusp1 eq Cusp2 then
-       Col2 := [Coefficient(f,2) : f in CuspExps[Cusp1]];
-    else Col2 := [Coefficient(f,1) : f in CuspExps[Cusp2]];
+        Col2 := [Integers() ! Coefficient(f,2) : f in CuspExps[Cusp1]]; // Second column of matrix
+    else Col2 := [Integers() ! Coefficient(f,1) : f in CuspExps[Cusp2]]; // Second column of matrix
     end if;
-    FIM:=Transpose(Matrix([Col1,Col2])); FIM;
-    Rank(FIM);  // Rank over rationals
-    FIMs:=FIMs cat [FIM];
-    Ranks:=Ranks cat [Rank(FIM)];
-
-    // l:=7;
-    // Rank(RMatrixSpace(GF(l),5,2)!FIM); // Rank mod l
+    c1 := Transpose(Matrix([Col1]));
+    c2 := Transpose(Matrix([Col2]));
+    F_inf_i := HorizontalJoin(c1,c2);
+    print  F_inf_i;
+    print "++++++++++++++++++++";
 end for;
+
+// We see that at each matrix has rank 2 modulo q for any prime q > 2.
+/* Output:
+
+[ 1 -1]
+[ 1 -1]
+[ 1  1]
+[ 1  1]
+[ 1  0]
+++++++++++++++++++++
+[ 1  1]
+[ 1  1]
+[ 1 -1]
+[ 1 -1]
+[ 1  0]
+++++++++++++++++++++
+[ 1 -1]
+[ 1 -1]
+[ 1  1]
+[ 1  1]
+[ 1 -1]
+++++++++++++++++++++
+[ 1 -1]
+[ 1 -1]
+[ 1 -1]
+[ 1 -1]
+[ 1  0]
+++++++++++++++++++++
+
+*/
