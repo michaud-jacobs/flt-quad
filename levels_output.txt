@@ -1,3 +1,10 @@
+*** Magma code to support the computations in the paper
+*** Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+*** See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
+
+*** This file contains the output of the levels.m file
+
+
 Computing the possible levels N_p for d = 2
 2 is ramified in K and S = {p}
 Cl(K) / Cl(K)^2 has size r = 1

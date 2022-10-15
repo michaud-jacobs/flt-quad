@@ -1,14 +1,23 @@
-// Magma code to support the calculations in the paper Fermat's Last Theorem and Modular Curves over Real Quadratic Fields.
+// Magma code to support the computations in the paper
+// Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+// See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
 
-// This code carries out the irreducibility checks in Section 3 of the paper.
+// The code works on Magma V2.26-10
+// The output is in the irreducibility_output.txt file
+// Some output is included within this file
 
+// This code carries out many of the irreducibility checks of Section 3 of the paper
+// The code carries out the following checks:
 
-////////////
-// Part 1 //
-////////////
+// Computation of ray class group exponents
+//
 
-// Start with a list of possible levels Np, as obtained using the code in the file Np_and_newforms.m
-// We compute the possible ray class groups (see Lemma 3.2 of the paper)
+// the functions in this file rely on the Np_possibilities functions in the levels.m file
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+// This function computes the possible ray class group exponents
 
 ray_class_group_exponents := function(d);
     N_ps, K := Np_possibilities(d);
@@ -42,7 +51,12 @@ ray_class_group_exponents := function(d);
     return exponents;
 end function;
 
-big_rcgs := [];
+// We compute the possible ray class group exponents for each d
+// We include 1 < d < 25 to compare with Freitas and Siksek's paper
+
+// See irreducibility_output.txt for the output of this loop
+
+big_rcgs := []; // Form list of ds with a ray class group having exponent 8.
 for d in [d : d in [2..100] | IsSquarefree(d)] do
     rcg_exps := ray_class_group_exponents(d);
     if 8 in rcg_exps then
@@ -51,17 +65,15 @@ for d in [d : d in [2..100] | IsSquarefree(d)] do
     print "RCG exponents for d =",d, "are", rcg_exps;
 end for;
 
+// These are the ds with a ray class group having exponent 8.
 big_rcgs := [ 26, 34, 35, 39, 55, 82, 91, 95 ];
 
-/////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
-////////////
-// Part 2 //
-////////////
-
-// This code implements the computation described in Lemma 3.8
+// This function implements the computation described in Lemma 3.8
+// Input: squarefree d > 0
+// Output: list of bad primes > 20 in the non-coprime split case
 
 bad_p_split := function(d);
     K := QuadraticField(d);
@@ -83,15 +95,13 @@ bad_p_split := function(d);
     return Spl;
 end function;
 
-/////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
-////////////
-// Part 3 //
-////////////
-
-// This code implements the computations of Proposition 3.6
+// This function implements the computation described in Proposition 3.6
+// It is only necessary to run this code for d with a ray class group exponent 8
+// Input: squarefree d > 0
+// Output: list of bad primes > 20 in the coprime case
 
 bad_p_for_big_rcgs:= function(d);
     T<x>:=PolynomialRing(Rationals());
@@ -110,10 +120,7 @@ bad_p_for_big_rcgs:= function(d);
     end if;
     // Increasing normbd1 enlarges the set T.
     normbd1:=10000;
-
-    T:=[q : q in PrimesUpTo(normbd1,K) |  IsSplit(q) eq false
-                                          and PrimeFactors(Integers() ! (Norm(q)))[1] gt 5
-                                          and PrimeFactors(Integers() ! (Norm(q)))[1] ne char_m];
+    T:=[q : q in PrimesUpTo(normbd1,K) |  IsSplit(q) eq false and PrimeFactors(Integers() ! (Norm(q)))[1] gt 5 and PrimeFactors(Integers() ! (Norm(q)))[1] ne char_m];
 
     // we compute the values R_q for q in T
     Resus:=[];
@@ -143,9 +150,12 @@ bad_p_for_big_rcgs:= function(d);
     return vbadp;
 end function;
 
-/////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+// We combine the functions above to compute an initial list of bad primes for each d
+// Input: squarefree d > 0
+// Output: Initial list of bad primes > 20
 
 all_bad_primes_1 := function(d);
     bad_split := Set(bad_p_split(d));
@@ -163,6 +173,9 @@ all_bad_primes_1 := function(d);
     return all_bad_p, bad_split, ram_p, rcg_bad_p;
 end function;
 
+// We compute an initial list of bad primes for each d
+// See the file irreducbility_output.txt for the output of this loop
+
 for d in [d : d in [2..100] | IsSquarefree(d)] do
     print "Considering d =", d;
     all_bad_p, bad_split, ram_p, rcg_bad_p := all_bad_primes_1(d);
@@ -173,13 +186,14 @@ for d in [d : d in [2..100] | IsSquarefree(d)] do
     print "++++++++++++++++++++++++++++++";
 end for;
 
-////////////
-// Part 4 //
-////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
-// This code implements the computations of Lemma 2.3
-// A list of primes of multiplicative reduction for E_{a,b,c,p}.
-// Increasing the range of n enlarges this set.
+// This function implements the computation described in Lemma 2.3
+
+// Input: d, p, bd (a search bound)
+// Output: A list of primes
+// Each prime splits in K = Q(sqrt_d) and the two primes of K above it are of multiplicative reduction for E_{a,b,c,p}
 
 mult_primes_q := function(d,p,bd);
     U<x>:=PolynomialRing(Rationals());
@@ -189,8 +203,8 @@ mult_primes_q := function(d,p,bd);
     return qs;
 end function;
 
-// We wish to verify that for each value of d and bad prime p
-// that we can find a pair of primes of multiplicative reduction
+// We try and find for each pair (d,p) with p a bad prime a prime of multipliactive reduction
+// Output included below the loop and in the irreducibility_output.txt file
 
 for d in [d : d in [2..100] | IsSquarefree(d)] do
     all_bad_p := all_bad_primes_1(d);
@@ -209,7 +223,19 @@ No prime found when d = 93 and p= 31
 
 */
 
-// However, in these cases, we know that we obtain non-exceptional points anyway
+// Although we found nothing in the cases (d,p) = (69,23) and (93,31)
+// The curves X_0(23) and X_0(31) have no non-exceptional points over the corresponding quadratic fields
+// So the conclusion is the same as when we can find primes of multiplicative reduction
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+// This function implements the computation described in Theorem 4.3
+
+// Input: d, p
+// Output: 0 or 1
+// If 0, the test failed and X_0(p)^d(Q) may have a rational point
+// If 0, the test failed and X_0(p)^d(Q) has no rational points
 
 twist_check := function(d,p);
     pass := 0;
@@ -228,6 +254,11 @@ twist_check := function(d,p);
     return pass;
 end function;
 
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+// This function uses the twist_check function to output a list of bad primes
+
 all_bad_primes_2 := function(d);
     all_bad_1 := all_bad_primes_1(d);
     all_bad_2 := {};
@@ -238,6 +269,8 @@ all_bad_primes_2 := function(d);
     end for;
     return all_bad_2;
 end function;
+
+// See the file irreducibility_output.txt for the output of this loop
 
 for d in [d : d in [2..100] | IsSquarefree(d)] do
     all_bad_2 := all_bad_primes_2(d);

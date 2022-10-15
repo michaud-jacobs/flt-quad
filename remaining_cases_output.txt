@@ -1,3 +1,10 @@
+*** Magma code to support the computations in the paper
+*** Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+*** See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
+
+*** This file contains the output of the remaining_cases.m file
+
+
 Considering d =  17
 Initial bad primes are: [ 31, 43, 53, 61, 67, 137, 157, 167 ]
 Considering newform 1

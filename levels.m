@@ -1,10 +1,19 @@
-// Magma code to support the calculations in the paper Fermat's Last Theorem and Modular Curves over Real Quadratic Fields.
+// Magma code to support the computations in the paper
+// Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+// See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
 
-////////////
-// Part 1 //
-////////////
+// The code works on Magma V2.26-10
+// The output is in the levels_output.txt file
 
-// Code to calculate the possibilities for the level-lowered levels N_p
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+// Input: Squarefree d > 0
+// Output:
+// List of possibilities for the level-lowered levels N_p, sorted by norm
+// The quadratic field K = Q(sqrt_d)
+// Set S of prime ideals in K above 2
+// Set H of representatives for Cl(K) / Cl(K)^2
 
 Np_possibilities := function(d);
     T<x>:=PolynomialRing(Rationals());
@@ -27,13 +36,12 @@ Np_possibilities := function(d);
         H:=H cat [H_i];
     end for;              // H forms a set of representatives for Cl(K)/Cl(K)^2, with #H=r.
 
-
-    // We now follows the strategy in [15] to calculate a list of possible levels N_p.
+    // We now follow Freitas and Siksek's strategy to calculate a list of possible levels N_p.
     // We first compute possibilities for the even part of the level.
 
     R<y>:=PolynomialRing(K);
     rams:=[Fac_2[i][2] : i in [1..#Fac_2]];
-    b:=&*[(S[i])^(2*rams[i]+1) : i in [1..#Fac_2]];  // b is as in [15]
+    b:=&*[(S[i])^(2*rams[i]+1) : i in [1..#Fac_2]];  // b is as in Freitas and Siksek's paper
     OKb,pi:=quo<OK | b>;
     U,t:=UnitGroup(OKb);
     s:=t^(-1);
@@ -125,9 +133,10 @@ Np_possibilities := function(d);
     return N_ps, K, S, H;
 end function;
 
-// We list the possible levels N_p
+// We now list the possible levels N_p for each d
 // We also list the dimensions of the spaces of modular forms and newforms
-// See the output file Np_output.txt as well as the table in the appendix of the paper.
+// See the output file levels_output.txt as well as the table in the appendix of the paper.
+// We include data for 1 < d < 25 to check against Freitas and Siksek's paper.
 
 for d in [d : d in [2..100] | IsSquarefree(d)] do
     print "Computing the possible levels N_p for d =", d;

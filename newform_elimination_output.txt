@@ -1,3 +1,10 @@
+*** Magma code to support the computations in the paper
+*** Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+*** See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
+
+*** This file contains the output of the newform_elimination.m file
+
+
 Considering d =  2
 Considering level Np with factorisation: [
     <Prime Ideal

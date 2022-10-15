@@ -1,4 +1,5 @@
-// Magma code to support the computations in the paper Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+// Magma code to support the computations in the paper
+// Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
 // See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
 
 // The code works on Magma V2.26-10
@@ -184,6 +185,8 @@ end for;
 
 // We now use decomp_elim to eliminate the following triples (d,p,Np):
 // (d,p,Np) = (67,19,N_ps[2]) and (d,p) = (55,17,N_ps[4])
+// We note we could also eliminate these two pairs (d,p)
+// using the methods of Section 6, as they are d-regular.
 
 d := 67;
 N_ps, K := Np_possibilities(d);

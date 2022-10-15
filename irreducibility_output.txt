@@ -1,3 +1,11 @@
+*** Magma code to support the computations in the paper
+*** Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+*** See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
+
+*** This file contains the output of the newform_elimination.m file
+
+*** Output of ray class group exponent computations:
+
 RCG exponents for d = 2 are { 1 }
 RCG exponents for d = 3 are { 2 }
 RCG exponents for d = 5 are { 2 }
@@ -59,11 +67,7 @@ RCG exponents for d = 94 are { 4 }
 RCG exponents for d = 95 are { 2, 4, 8 }
 RCG exponents for d = 97 are { 1 }
 
-
-
-
-
-
+*** Output of initial bad primes computation:
 
 Considering d = 2
 The bad split primes in not coprime case are: {}
@@ -426,11 +430,12 @@ The big RCG bad primes are: {}
 All bad primes > 19 (part 1) are: { 467 }
 ++++++++++++++++++++++++++++++
 
+*** Output of multiplicative prime search
 
+No prime found when d = 69 and p= 23
+No prime found when d = 93 and p= 31
 
-
-
-
+*** Output of final bad primes computation
 
 For d = 29 all bad primes > 19 (part 2) are: { 29 }
 For d = 34 all bad primes > 19 (part 2) are: { 59 }

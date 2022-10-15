@@ -1,8 +1,18 @@
-# Sage code to support the calculations in the paper Fermat's Last Theorem and Modular Curves over Real Quadratic Fields.
+# SageMath code to support the computations in the paper
+# Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+# See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
 
-# This code carries out the eta product method described in Section 4.2 of the paper
+# The code works on SageMath version 9.7 using Python 3.10.5
 
-# Checks if elliptic curve satisfies E(K) = E(Q)_tors
+# This code implements the modular parametrisation method in Section 4.3 of the paper
+
+# The recipes for pairs (d,p) and the corresponding outputs are included at the end of the file
+
+##############################################################################
+##############################################################################
+
+# Input: d and an elliptic curve E / Q
+# Output: True is E(K) = E(Q)_tors, False otherwise, where K = Q(sqrt_d)
 
 def check_ell_curve(d,E):
     rank_Q = E.rank()
@@ -20,7 +30,12 @@ def check_ell_curve(d,E):
         return False
     return True
 
+##############################################################################
 
+# This function attempts to compute a planar model for X_0(N) where N is the conductor of E
+# It ranges through a basis of eta quotients of level N
+# If break_op == True then the function will stop after having found one planar model
+# otherwise it will test each basis element and potentially return several
 
 def F_polys(E,break_op):
     F_polys = []
@@ -57,7 +72,12 @@ def F_polys(E,break_op):
                 return F_polys
     return F_polys
 
+##############################################################################
 
+# Input: A planar model for X_0(N) obtained using the F_polys function
+#        The x coordinate of a point in E(K) = E(Q)_tors.
+#        This can be set to 'inf' for the point at infinity
+# Output: Two factored polynomials displaying the corresponding s-values
 
 def fields(F, x_coord):
     R.<X,S> = QQ[]
@@ -72,6 +92,8 @@ def fields(F, x_coord):
         Fs = F(x_coord,S).factor()
         F2s = F2(x_coord,S).factor()
         return Fs, F2s
+
+##############################################################################
 
 # We use this method for the following pairs (d,p):
 # (29,29), (34,59), (53,53), (89,53)

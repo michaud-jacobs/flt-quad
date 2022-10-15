@@ -1,4 +1,23 @@
-// Magma code to support the calculations in the paper Fermat's Last Theorem and Modular Curves over Real Quadratic Fields.
+// Magma code to support the computations in the paper
+// Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+// See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
+
+// The code works on Magma V2.26-10
+// The output is in the remaining_cases_output.txt file
+// Some output is included within this file
+
+// This code carries out the remaining elimination steps in Section 5 of the paper
+// The code carries out the following checks:
+
+// Image of inertia argument for d = 34 and d = 55
+// Symplectic argument for d = 89
+// Sieving steps for eliminating individual primes p
+
+// the functions in this file rely on the Np_possibilities functions in the levels.m file
+// and all functions in the newform_elimination.m file.
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
 // We carry out the computations for the image of inertia argument
 // in the cases d = 34 and d = 55
@@ -22,7 +41,7 @@ e_vals_f2 := [-Evaluate(e,0) : e in f2];
 // [ 0, -2, 14, 0, -2, 10, 2, 0, 10, 10, 0, 0, 6, 0, 0, 22, 0 ]
 
 // We search for elliptic curves to which these newforms corresponds
-// The elliptic curve function will list isogenous curves
+// The elliptic curve function may list isogenous curves
 // and may produce many matching curves
 matching_curves_f1 := [];
 matching_curves_f2 := [];
@@ -91,11 +110,10 @@ assert Valuation(j1,pp) ge 0;
 assert Valuation(j2,pp) ge 0;
 
 
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 
-
-// We verify the mod 5 case when d = 89
+// We verify the mod 5 case when d = 89, this is the symplectic argument
 
 d := 89;
 N_ps, K := Np_possibilities(d);
@@ -121,21 +139,20 @@ Valuation(Discriminant(E),p1)*Valuation(Discriminant(E),p2) eq 20;
 // This occurs if and only if p = +1 or -1 mod p
 // So there are no solutions if p = +2 or -2 mod p
 
-
-
-
-
-
-
-
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 
 // This code carries out the computations of Lemma 5.5 in the paper.
+
+// Input: d
+// Output: primes in the range 17 to 10^7 that cannot be eliminated
+// when the Frey curve corresponds to a newform with rational eigenvalues
 
 initial_bad_p := function(d);
     U<x>:=PolynomialRing(Rationals());
     K<a>:=NumberField(x^2-d);
     OK:=Integers(K);
-    PP:=PrimesInInterval(17,10^4);  // Primes to test
+    PP:=PrimesInInterval(17,10^7);  // Primes to test
     ns:=[];    // For each prime we aim to find a value of n that works.
     for p in PP do;
         nsp:=[];
@@ -155,12 +172,10 @@ initial_bad_p := function(d);
     return badp;
 end function;
 
+// A second function to try and eliminate any primes that initial_bad_p did not eliminated
 
-
-
-
-
-// In these cases we work directly with the Hilbert newforms with c-values 0 and try and find a suitable n for each prime p.
+// Input: p, rational newform f, field K = Q(sqrt_d)
+// Output: integer n used to eliminate p if found, 0 otherwise
 
 elim_p := function(p,f,K);
     U<x>:=PolynomialRing(Rationals());
@@ -178,6 +193,9 @@ elim_p := function(p,f,K);
     print "Unable to eliminate",p;
     return 0;
 end function;
+
+// We run these elimination steps for those d appearing in Theorem 3
+// The output is in the remaining_cases_output.txt file
 
 for d in [17,33,41,57,89] do
     print "Considering d = ",d;

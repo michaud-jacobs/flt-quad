@@ -1,11 +1,15 @@
-// Magma code to support the calculations in the paper Fermat's Last Theorem and Modular Curves over Real Quadratic Fields.
+// Magma code to support the computations in the paper
+// Fermat's Last Theorem and modular curves over real quadratic fields by Philippe Michaud-Jacobs.
+// See https://github.com/michaud-jacobs/flt-quad for all the code files and links to the paper
 
-// This code carries out the Mordell-Weil sieves in Section 4.4 of the paper.
-// Part 1 concerns X_0(61) and Part 2 concerns X_0(43)
+// The code works on Magma V2.26-10
+// The output is included within this file
 
-////////////
-// Part 1 //
-////////////
+// This code carries out the sieving checks in Section 4 of the paper
+// The file includes two sieves, one for X_0(61) and one for X_0(43)
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
 // Sieve for X_0(61)
 
@@ -236,10 +240,6 @@ Number of solutions at each step:
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
-
-////////////
-// Part 2 //
-////////////
 
 // Sieve for X_0(43)
 
