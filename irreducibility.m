@@ -294,9 +294,11 @@ end for;
 // The classification of all quadratic points on X_0(62) rules out (d,p) = (93,31):
 // F. Najman and B. Vukorepa. Quadratic points on bielliptic modular curves. https://arxiv.org/abs/2112.03226
 
-// Finally, for (d,p) = (71,59), we prove that the hyperelliptic curve X_0(59) twisted by d = 71 has no rational points
+// Finally, for (d,p) = (34,59) and (71,59), we prove that the hyperelliptic curve X_0(59) twisted by d has no rational points
 
-X := SimplifiedModel(SmallModularCurve(59));
-X71 := QuadraticTwist(X,71);
-s := TwoCoverDescent(X71); // Computes the fake 2-Selmer set, about 30 mins.
-assert s eq {}; // So no rational points
+for d in [34,71] do:
+    X := SimplifiedModel(SmallModularCurve(59));
+    Xd := QuadraticTwist(X,d);
+    s := TwoCoverDescent(Xd); // Computes the fake 2-Selmer set, about 30 mins.
+    assert s eq {}; // So no rational points
+end for;

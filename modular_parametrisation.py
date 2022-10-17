@@ -97,6 +97,7 @@ def fields(F, x_coord):
 
 # We use this method for the following pairs (d,p):
 # (29,29), (34,59), (53,53), (89,53)
+# (Note that we also considered (34,59) using the TwoCoverDescent method, see irreducibility.m)
 
 ################################################
 
