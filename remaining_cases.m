@@ -184,8 +184,8 @@ elim_p := function(p,f,K);
     for q in qs do
         n:=(q-1)/p;
         qq:=Factorisation(q*OK)[1][1];
-        h1:=Integers() ! (HeckeEigenvalue(f,qq)) mod p;
-        if h1 ne 2 then
+        h1:=Integers() ! (HeckeEigenvalue(f,qq));
+        if h1 ne 2 and h1 ne -2 then
             print "Eliminated",p, "using n = ", n;
             return n;
         end if;
